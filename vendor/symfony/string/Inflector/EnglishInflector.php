@@ -55,11 +55,23 @@ final class EnglishInflector implements InflectorInterface
         // indices (index), appendices (appendix), prices (price)
         ['seci', 4, false, true, ['ex', 'ix', 'ice']],
 
+        // codes (code)
+        ['sedoc', 5, false, true, 'code'],
+
         // selfies (selfie)
         ['seifles', 7, true, true, 'selfie'],
 
+        // zombies (zombie)
+        ['seibmoz', 7, true, true, 'zombie'],
+
         // movies (movie)
         ['seivom', 6, true, true, 'movie'],
+
+        // names (name)
+        ['seman', 5, true, false, 'name'],
+
+        // conspectuses (conspectus), prospectuses (prospectus)
+        ['sesutcep', 8, true, true, 'pectus'],
 
         // feet (foot)
         ['teef', 4, true, true, 'foot'],
@@ -81,6 +93,9 @@ final class EnglishInflector implements InflectorInterface
 
         // accesses (access), addresses (address), kisses (kiss)
         ['sess', 4, true, false, 'ss'],
+
+        // statuses (status)
+        ['sesutats', 8, true, true, 'status'],
 
         // analyses (analysis), ellipses (ellipsis), fungi (fungus),
         // neuroses (neurosis), theses (thesis), emphases (emphasis),
@@ -118,10 +133,16 @@ final class EnglishInflector implements InflectorInterface
         // fees (fee), trees (tree), employees (employee)
         ['see', 3, true, true, 'ee'],
 
+        // edges (edge)
+        ['segd', 4, true, true, 'dge'],
+
         // roses (rose), garages (garage), cassettes (cassette),
         // waltzes (waltz), heroes (hero), bushes (bush), arches (arch),
         // shoes (shoe)
         ['se', 2, true, true, ['', 'e']],
+
+         // status (status)
+        ['sutats', 6, true, true, 'status'],
 
         // tags (tag)
         ['s', 1, true, true, ''],
@@ -226,6 +247,9 @@ final class EnglishInflector implements InflectorInterface
         // bacteria (bacterium), criteria (criterion), phenomena (phenomenon)
         ['noi', 3, true, true, 'ions'],
 
+        // coupon (coupons)
+        ['nop', 3, true, true, 'pons'],
+
         // seasons (season), treasons (treason), poisons (poison), lessons (lesson)
         ['nos', 3, true, true, 'sons'],
 
@@ -260,6 +284,12 @@ final class EnglishInflector implements InflectorInterface
 
         // circuses (circus)
         ['suc', 3, true, true, 'cuses'],
+
+        // status (status)
+        ['sutats', 6, true, true, ['status', 'statuses']],
+
+        // conspectuses (conspectus), prospectuses (prospectus)
+        ['sutcep', 6, true, true, 'pectuses'],
 
         // fungi (fungus), alumni (alumnus), syllabi (syllabus), radii (radius)
         ['su', 2, true, true, 'i'],
@@ -306,14 +336,32 @@ final class EnglishInflector implements InflectorInterface
      */
     private const UNINFLECTED = [
         '',
+
+        // data
         'atad',
+
+        // deer
         'reed',
+
+        // feedback
         'kcabdeef',
+
+        // fish
         'hsif',
+
+        // info
         'ofni',
+
+        // moose
         'esoom',
+
+        // series
         'seires',
+
+        // sheep
         'peehs',
+
+        // species
         'seiceps',
     ];
 
